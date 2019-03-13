@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'EipApplication'
-  s.version          = '0.1.4'
-  s.summary          = '企业门户应用模板'
+  s.name             = 'HippiusDemo'
+  s.version          = '1.0.0'
+  s.summary          = '测试模板'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,17 +21,17 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://code.choerodon.com.cn/hippius-ios-templets/EipApplication'
+  s.homepage         = 'https://github.com/jinliyuelong/HippiusDemo'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'liyanjun' => 'yanjun.li@hand-china.com' }
-  s.source           = { :git => 'https://code.choerodon.com.cn/hippius-ios-templets/EipApplication.git', :tag => s.version.to_s }
+  s.author           = { 'liyanjun' => '1254463047@qq.com' }
+  s.source           = { :git => 'https://github.com/jinliyuelong/HippiusDemo.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'Classes/**/*'
-  s.resources    = "Resources/EipApplication.bundle"
+  s.resources    = "Resources/HippiusDemo.bundle"
 
   s.dependency 'HippiusBaseLib'
 
