@@ -1,0 +1,57 @@
+/* 
+  TempletLanguage
+  Hippius
+
+  Created by Liyanjun on 2018/11/24.
+  Copyright © 2018 HAND. All rights reserved.
+*/
+
+
+"Camera" = "Camera";
+"From gallery" = "From gallery";
+
+/** 通用弹窗 **/
+"ErrorHintWrongPwd" = "Wrong password！";
+"ErrorLoginHintWrongNetwork" = "Login failed, please check your network!";
+"ErrorLoginHintDifferentUserOrPwd" = "Wrong phone number or password!";
+"ErrorLoginHintNotRegisterToContact" = "No registration information for %@, Please contact the system administrator ";
+
+"ErrorLoginHintNotRegister" = " You need to active first!";
+"ErrorLoginHintUserOrPwdWrong" = " Wrong phone number or password!";
+"ErrorLoginHintServerMaintenance" = " System Maintenance!";
+
+
+
+"Cancel" = "Cancel";
+"Confirm" = "OK";
+"done" = "Done";
+//性别选择器
+"Male" = "Male";
+"Female" = "Female";
+
+//手机绑定
+"phonebindTitle" = "当前绑定手机号";
+"phoneNobindTitle" = "当前暂无绑定手机号";
+"phonebindDes" = "更换手机号号码后，下次登录请使用新手机号登录。";
+"bindCertificate" = "身份验证";
+"vertifyPhone" = "校验手机";
+"changePhone" = "修改手机";
+"PhoneBindHit" = "Bind Now";
+"PhoneNumberHint" = "Phone Number";
+"getVertiryCode" = "Verification";
+"PasswordHint" = "Enter Password";
+"setMainCorp" = "设置主企业";
+"next" = "Next";
+
+"InputVerificationCodeHint" = "Enter the Verification Code";
+
+//设置
+"Settings" = "Settings";
+/* 登陆页 */
+"Login" = "Log In";
+"Logout" = "Log Out";
+"GestureUnlock" = "Unlock by Sign";
+"FingerprintUnlock" = "Unlock by Fingerprint";
+"ChangeGesture" = "修改手势";
+"BindingAccount" = "Login Account";
+"FingerprintPwdError" = "指纹不匹配";
