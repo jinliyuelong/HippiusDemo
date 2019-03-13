@@ -28,7 +28,7 @@ source 'https://github.com/CocoaPods/Specs.git'  # 官方库
 
 ## Author
 
-jinliyuelong, yanjun.li@hand-china.com
+jinliyuelong, 1254463047@qq.com
 
 ## License
 
