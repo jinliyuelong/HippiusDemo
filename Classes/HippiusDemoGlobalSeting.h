@@ -18,8 +18,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy)   NSString *discription;//说明
 @property (nonatomic, copy)   NSString *selectIcon;//选中的图片
 @property (nonatomic, copy)   NSString *unselectIcon;//未选中的图片
-@property (nonatomic, copy)   NSArray *layout;//显示的配置项
 
+//以下是自定义的部分
+@property (nonatomic, copy)  NSArray *hippiusmoduledemo_checkbox_area;//
+@property (nonatomic, copy) NSString *hippiusmoduledemo_str1;
+@property (nonatomic, copy) NSString *hippiusmoduledemo_str2;
+@property (nonatomic, copy) NSString *hippiusmoduledemo_color1;
+@property (nonatomic, copy) NSString *hippiusmoduledemo_color2;
+@property (nonatomic, copy) NSString *hippiusmoduledemo_img_1;
+@property (nonatomic, copy) NSString *hippiusmoduledemo_radio_area;
+@property (nonatomic, copy) NSString *hippiusmoduledemo_textarea1;
 @end
 
 NS_ASSUME_NONNULL_END

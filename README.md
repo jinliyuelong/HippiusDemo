@@ -17,7 +17,7 @@ EipApplication is available through [CocoaPods](https://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'EipApplication'
+pod 'HippiusDemo'
 ```
 注意pod文件添加源
 ```ruby
