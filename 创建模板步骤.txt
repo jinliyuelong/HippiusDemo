@@ -11,18 +11,18 @@ pod repo add hippiusBase https://code.choerodon.com.cn/mobile-center-hippius/hip
 
 #验证
 
-pod lib lint HippiusDemo.podspec --use-libraries --allow-warnings --sources=https://code.choerodon.com.cn/mobile-center-hippius/hippius-ios-repo.git,https://github.com/CocoaPods/Specs
+pod lib lint HippiusDemo.podspec --use-libraries --allow-warnings --verbose --sources=https://code.choerodon.com.cn/mobile-center-hippius/hippius-ios-repo.git,https://github.com/CocoaPods/Specs
 
 
 #提交
 git add .
-git commit -m "1.0.0"
+git commit -m "1.0.1"
 git push 
-git tag -m "1.0.0" 1.0.0
+git tag -m "1.0.1" 1.0.1
 git push --tags
 
 #提交
-pod repo push hippiusBase HippiusDemo.podspec --use-libraries --allow-warnings --sources=https://code.choerodon.com.cn/mobile-center-hippius/hippius-ios-repo.git,https://github.com/CocoaPods/Specs
+pod repo push hippiusBase HippiusDemo.podspec --use-libraries --allow-warnings --verbose  --sources=https://code.choerodon.com.cn/mobile-center-hippius/hippius-ios-repo.git,https://github.com/CocoaPods/Specs
 
 
 ##如果没找到 更新repo

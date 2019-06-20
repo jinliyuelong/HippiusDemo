@@ -7,7 +7,7 @@
 //
 
 #import "HippiusDemoGlobalSeting.h"
-#import "HippiusBaseLib.h"
+#import "BaseConst.h"
 
 @implementation HippiusDemoGlobalSeting
 + (instancetype)shareInstance{

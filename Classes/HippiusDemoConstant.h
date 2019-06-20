@@ -8,7 +8,8 @@
 
 #ifndef HippiusDemoConstant_h
 #define HippiusDemoConstant_h
-#import "HippiusBaseLib.h"
+#import "BaseConst.h"
+#import "CommonBusinessContant.h"
 #import "NSBundle+Language.h"
 #define HippiusDemoLocalized(key) [[NSBundle bundleWithPath:[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"HippiusDemo" ofType:@"bundle"]] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"HippiusDemoLanguage"]
 
