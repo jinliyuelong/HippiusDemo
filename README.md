@@ -1,9 +1,9 @@
 # EipApplication
 
-[![CI Status](https://img.shields.io/travis/jinliyuelong/EipApplication.svg?style=flat)](https://travis-ci.org/jinliyuelong/EipApplication)
-[![Version](https://img.shields.io/cocoapods/v/EipApplication.svg?style=flat)](https://cocoapods.org/pods/EipApplication)
-[![License](https://img.shields.io/cocoapods/l/EipApplication.svg?style=flat)](https://cocoapods.org/pods/EipApplication)
-[![Platform](https://img.shields.io/cocoapods/p/EipApplication.svg?style=flat)](https://cocoapods.org/pods/EipApplication)
+[![CI Status](https://img.shields.io/travis/jinliyuelong/EipApplication.svg?style=flat)](https://travis-ci.org/jinliyuelong/HippiusDemo)
+[![Version](https://img.shields.io/cocoapods/v/EipApplication.svg?style=flat)](https://cocoapods.org/pods/HippiusDemo)
+[![License](https://img.shields.io/cocoapods/l/EipApplication.svg?style=flat)](https://cocoapods.org/pods/HippiusDemo)
+[![Platform](https://img.shields.io/cocoapods/p/EipApplication.svg?style=flat)](https://cocoapods.org/pods/HippiusDemo)
 
 ## Example
 
