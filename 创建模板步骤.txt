@@ -18,7 +18,7 @@ pod lib lint HippiusDemo.podspec --use-libraries --allow-warnings --verbose --so
 git add .
 git commit -m "1.0.1"
 git push 
-git tag -m "1.0.1" 1.0.1
+git tag -m "1.0.2" 1.0.2
 git push --tags
 
 #提交
