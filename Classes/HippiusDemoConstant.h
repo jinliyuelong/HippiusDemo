@@ -10,8 +10,9 @@
 #define HippiusDemoConstant_h
 #import "BaseConst.h"
 #import "CommonBusinessContant.h"
+#define KBundleName @"HippiusDemo"
 #import "NSBundle+Language.h"
-#define HippiusDemoLocalized(key) [[NSBundle bundleWithPath:[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"HippiusDemo" ofType:@"bundle"]] pathForResource:[NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]] ofType:@"lproj"]] localizedStringForKey:(key) value:nil table:@"HippiusDemoLanguage"]
+#define HippiusDemoLocalized(key) LocalizedInbundelWithTable(key,@"HippiusDemo",@"HippiusDemoLanguage")
 
 // MARK:  - 定义通知
 // MARK: - 定义接口

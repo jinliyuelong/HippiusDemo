@@ -27,14 +27,14 @@
                 dic[@"discription"] = params[@"discription"];
                 dic[@"selectIcon"] = params[@"selectIcon"];
                 dic[@"unselectIcon"] = params[@"unselectIcon"];
-                dic[@"hippiusmoduledemo_str1"] = params[@"hippiusmoduledemo_str1"];
-                dic[@"hippiusmoduledemo_str2"] = params[@"hippiusmoduledemo_str2"];
-                dic[@"hippiusmoduledemo_color1"] = params[@"hippiusmoduledemo_color1"];
-                dic[@"hippiusmoduledemo_color2"] = params[@"hippiusmoduledemo_color2"];
-                dic[@"hippiusmoduledemo_img_1"] = params[@"hippiusmoduledemo_img_1"];
-                dic[@"hippiusmoduledemo_checkbox_area"] = params[@"hippiusmoduledemo_checkbox_area"];
-                dic[@"hippiusmoduledemo_radio_area"] = params[@"hippiusmoduledemo_radio_area"];
-                dic[@"hippiusmoduledemo_textarea1"] = params[@"hippiusmoduledemo_textarea1"];
+                dic[@"demo_str1"] = params[@"demo_str1"];
+                dic[@"demo_str2"] = params[@"demo_str2"];
+                dic[@"demo_color1"] = params[@"demo_color1"];
+                dic[@"demo_color2"] = params[@"demo_color2"];
+                dic[@"demo_img_1"] = params[@"demo_img_1"];
+                dic[@"demo_checkbox_area"] = params[@"demo_checkbox_area"];
+                dic[@"demo_radio_area"] = params[@"demo_radio_area"];
+                dic[@"demo_textarea1"] = params[@"demo_textarea1"];
                 g_setting = [HippiusDemoGlobalSeting mj_objectWithKeyValues:dic];
                 *stop = YES;
             }

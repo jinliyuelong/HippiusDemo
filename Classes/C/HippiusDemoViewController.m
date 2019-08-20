@@ -28,9 +28,10 @@
     //这一部分是替换手写的导航栏 实现push进来 更丝滑
     [self hippiusexchangeNavTocustmNav];
 //    [self.customNavBar yj_setBottomLineHidden:YES];
-    self.customNavBar.title = @"demo工程";
+    self.customNavBar.title = HippiusDemoLocalized(@"demo");
     
-    [self.customNavBar yj_setRightButtonWithTitle:@"按钮" titleColor:[UIColor colorWithHexString:[GlobalSetting shareInstance].themeColor]];
+//    [self.customNavBar yj_setRightButtonWithTitle:@"按钮" titleColor:[UIColor colorWithHexString:[GlobalSetting shareInstance].themeColor]];
+    [self.customNavBar yj_setRightButtonWithImage:[NSURL getImageFromBundleWithName:@"clear" bundleName:KBundleName]];
     kWeakSelf
     [self.customNavBar setOnClickRightButton:^{
         NSLog(@"点击");
@@ -46,6 +47,7 @@
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.customNavBar.bottom, ScreenWidth, ScreenHeight-self.customNavBar.bottom - Height_TabBar)];
     
     scrollView.backgroundColor = [UIColor whiteColor];
+    
     //设置字体和颜色的区域
     UIView *firstView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
     firstView.backgroundColor = [UIColor whiteColor];
@@ -54,7 +56,7 @@
     hippiusmoduledemo_str1label.top = 5;
     hippiusmoduledemo_str1label.left = 10;
     [hippiusmoduledemo_str1label sizeToFit];
-    UILabel *hippiusmoduledemo_str1value = [self createLabelWithFont:[UIFont defaultFontWithSize:14] name:[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_str1 colorstr:@"1F8CEB"];
+    UILabel *hippiusmoduledemo_str1value = [self createLabelWithFont:[UIFont defaultFontWithSize:14] name:[HippiusDemoGlobalSeting shareInstance].demo_str1 colorstr:@"1F8CEB"];
     hippiusmoduledemo_str1value.top = hippiusmoduledemo_str1label.top;
     hippiusmoduledemo_str1value.left = hippiusmoduledemo_str1label.right+ 10;
     [hippiusmoduledemo_str1value sizeToFit];
@@ -66,7 +68,7 @@
     hippiusmoduledemo_str2label.top = hippiusmoduledemo_str1label.bottom + 10;
     hippiusmoduledemo_str2label.left = hippiusmoduledemo_str1label.left;
     [hippiusmoduledemo_str2label sizeToFit];
-    UILabel *hippiusmoduledemo_str2value = [self createLabelWithFont:[UIFont defaultFontWithSize:14] name:[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_str1 colorstr:@"1F8CEB"];
+    UILabel *hippiusmoduledemo_str2value = [self createLabelWithFont:[UIFont defaultFontWithSize:14] name:[HippiusDemoGlobalSeting shareInstance].demo_str1 colorstr:@"1F8CEB"];
     hippiusmoduledemo_str2value.top = hippiusmoduledemo_str2label.top;
     hippiusmoduledemo_str2value.left = hippiusmoduledemo_str2label.right+ 10;
     [hippiusmoduledemo_str2value sizeToFit];
@@ -80,7 +82,7 @@
     hippiusmoduledemo_color1label.left = hippiusmoduledemo_str2label.left;
     [hippiusmoduledemo_color1label sizeToFit];
     UIView *hippiusmoduledemo_color1View = [UIView new];
-    hippiusmoduledemo_color1View.backgroundColor = [UIColor colorWithHexString:[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_color1];
+    hippiusmoduledemo_color1View.backgroundColor = [UIColor colorWithHexString:[HippiusDemoGlobalSeting shareInstance].demo_color1];
     hippiusmoduledemo_color1View.left = hippiusmoduledemo_color1label.right + 10;
     hippiusmoduledemo_color1View.top = hippiusmoduledemo_color1label.top;
     hippiusmoduledemo_color1View.size = CGSizeMake(ScreenWidth - hippiusmoduledemo_color1View.left - 10, hippiusmoduledemo_color1label.height);
@@ -93,7 +95,7 @@
     hippiusmoduledemo_color2label.left = hippiusmoduledemo_color1label.left;
     [hippiusmoduledemo_color2label sizeToFit];
     UIView *hippiusmoduledemo_color2View = [UIView new];
-    hippiusmoduledemo_color2View.backgroundColor = [UIColor colorWithHexString:[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_color2];
+    hippiusmoduledemo_color2View.backgroundColor = [UIColor colorWithHexString:[HippiusDemoGlobalSeting shareInstance].demo_color2];
     hippiusmoduledemo_color2View.left = hippiusmoduledemo_color1View.left;
     hippiusmoduledemo_color2View.top = hippiusmoduledemo_color2label.top;
     hippiusmoduledemo_color2View.size = CGSizeMake(ScreenWidth - hippiusmoduledemo_color2View.left - 10, hippiusmoduledemo_color2label.height);
@@ -115,7 +117,7 @@
     [hippiusmoduledemo_imglabel sizeToFit];
 
     
-    UIImageView *hippiusmoduledemo_img = [[UIImageView alloc] initWithImage:[NSURL getImageFromBundleWithName:[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_img_1]];
+    UIImageView *hippiusmoduledemo_img = [[UIImageView alloc] initWithImage:[NSURL getImageFromBundleWithName:[HippiusDemoGlobalSeting shareInstance].demo_img_1]];
     hippiusmoduledemo_img.top = hippiusmoduledemo_imglabel.bottom + 10;
     hippiusmoduledemo_img.width = ScreenWidth - 30;
     hippiusmoduledemo_img.left = 15;
@@ -158,7 +160,7 @@
     area3.height = 150;
     area3.backgroundColor = [UIColor randomColor];
     [thirdView addSubview:hippiusmoduledemo_checkbox_arealabel];
-    NSArray *hippiusmoduledemo_checkbox_arealist = [HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_checkbox_area;
+    NSArray *hippiusmoduledemo_checkbox_arealist = [HippiusDemoGlobalSeting shareInstance].demo_checkbox_area;
    NSArray * hippiusmoduledemo_checkbox_arealistprelist =  [hippiusmoduledemo_checkbox_arealist filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF IN {'area1','area2','area3'}"]];
     if ([hippiusmoduledemo_checkbox_arealistprelist containsObject:@"area1"]) {
          [thirdView addSubview:area1];
@@ -207,13 +209,13 @@
     
     [fourView addSubview:hippiusmoduledemo_radio_arealabel];
     
-    if ([[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_radio_area isEqualToString:@"area1"]) {
+    if ([[HippiusDemoGlobalSeting shareInstance].demo_radio_area isEqualToString:@"area1"]) {
         [fourView addSubview:radioarea1];
     }
-    if ([[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_radio_area isEqualToString:@"area2"]) {
+    if ([[HippiusDemoGlobalSeting shareInstance].demo_radio_area isEqualToString:@"area2"]) {
         [fourView addSubview:radioarea2];
     }
-    if ([[HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_radio_area isEqualToString:@"area3"]) {
+    if ([[HippiusDemoGlobalSeting shareInstance].demo_radio_area isEqualToString:@"area3"]) {
         [fourView addSubview:radioarea3];
     }
     fourView.height = radioarea3.bottom + 10;
@@ -236,7 +238,7 @@
     textView.backgroundColor = [UIColor randomColor];
     textView.textColor = [UIColor colorWithHexString:@"1F8CEB"];
     textView.font = [UIFont defaultFontWithSize:14];
-    textView.text = [HippiusDemoGlobalSeting shareInstance].hippiusmoduledemo_textarea1;
+    textView.text = [HippiusDemoGlobalSeting shareInstance].demo_textarea1;
     textView.top = hippiusmoduledemo_textarea1label.bottom + 10;
     textView.left = 15;
     textView.width = ScreenWidth - 30;
